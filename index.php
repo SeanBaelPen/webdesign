@@ -13,37 +13,12 @@
 </head>
 
 <body>
-  <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">MENU<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">SHOP<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">ABOUT US<span class="sr-only">(current)</span></a>
-        </li>
-        <a class="navbar-brand" href="#"><img src="Pictures/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">LOCATIONS<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">ACCOUNT<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>-->
-
+  
   <?php
     include 'include/navbar_default.html';
-  
   ?>
-
+ 
+ <div class="container-fluid">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="margin-right: 40px;"></li>
@@ -62,6 +37,8 @@
       </div>
     </div>
   </div>
+  </div>
+  
 
   <div class="productCarousel">
     <p>Our Products</p>
