@@ -17,8 +17,8 @@
   <?php
     include 'include/navbar_default.html';
   ?>
-  <div class="container-fluid">
-
+  <div class="container-fluid bg-dark">
+    MENU
 
   </div>
   <div class="container-fluid d-flex">
@@ -26,26 +26,43 @@
         <ul>
             <form method="post">
             <li>
-            <button >All</button>
+            <button type= "submit" name ="all" >All</button>
             </li>
             <li>
-            <button href="index.php">Coffee Beans</button>
+            <button type= "submit" name ="beans">Coffee Beans</button>
             </li>
             <li>
-            <button href="index.php">Hot Coffee</button>>
+            <button type= "submit" name ="hcoffee">Hot Coffee</button>>
             </li>
             <li>
-            <button href="index.php">Iced Coffee</button>
+            <button type= "submit" name ="icoffee">Iced Coffee</button>
             </li>
             <li>
-            <button href="index.php">Pastry</button>
+            <button type= "submit" name ="pastry">Pastry</button>
             </li>
             </form>
         </ul>
 
     </div>
     <div class="col-sm-8 bg-light">
+        
         <?php
+
+            if(array_key_exists('all', $_POST)){
+                echo "this is all";
+            }
+            else if (array_key_exists('beans', $_POST)){
+                echo "this is coffee beans";
+            }
+            else if (array_key_exists('hcoffee', $_POST)){
+                echo "this is hot coffee";
+            }
+            else if (array_key_exists('icoffee', $_POST)){
+                echo "this is iced coffee";
+            }
+            else if (array_key_exists('pastry', $_POST)){
+                echo "this is pastry";
+            }
         ?>
 
     </div>
@@ -54,7 +71,6 @@
 
   <?php
     include 'include/footer.html';
-  
   ?>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
