@@ -211,3 +211,6 @@ input[type="text"] {
 .body{
   border: 1px solid black;
 }
+.prod_specs{
+  position: sticky;
+}
