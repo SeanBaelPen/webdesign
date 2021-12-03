@@ -1,8 +1,6 @@
 <?php
-
     session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -244,51 +242,10 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="socialMedia">
-      <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="">
-      <img src="https://cdn.icon-icons.com/icons2/1109/PNG/512/1486053611-twitter_79195.png" alt="">
-      <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png" alt="">
-    </div>
-
-    <div class="footerFlex">
-    <div class="box-1">
-        <img src="logo.png" alt="logo.png" height="100px" class="footerLogo">
-    </div>
-    <div class="box-2">
-      <span>About</span>
-      <div class="aboutInfos">
-        <span>FAQ</span>
-        <span>Locations</span>
-        <span>Our Story</span>
-        <span>Join Us</span>
-      </div>
-    </div>
-      <div class="box-3">
-        <span>Shop Online</span>
-        <div class="shopInfos">
-          <span>Menu</span>
-          <span>Equpiment</span>
-        </div>
-      </div>
-      <div class="box-4">
-        <span>Contacts</span>
-        <div class="contactsInfo">
-          <span>info@louis.com.ph</span>
-          <span>801-####</span>
-        </div>
-    </div>
-</div>
-
-
-      <div class="newsletter">
-        <p>Subscribe to our newsletter</p>
-        <input type="text" placeholder="Enter Email" name="email" required>
-      </div>
-
-    </div>
-
-  </div>
+  <?php
+    include 'include/footer.html';
+  
+  ?>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
