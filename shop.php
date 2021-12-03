@@ -28,7 +28,7 @@
             <button type= "submit" name ="beans">Coffee Beans</button>
             </li>
             <li>
-            <button type= "submit" name ="hcoffee">Hot Coffee</button>>
+            <button type= "submit" name ="hcoffee">Hot Coffee</button>
             </li>
             <li>
             <button type= "submit" name ="icoffee">Iced Coffee</button>
@@ -47,18 +47,74 @@
                 die("Failed To Connect: ".$con->connect_error);
             }
             else{
-                $query = "select * from product";
-                $result = $con->query($query);
-                if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                $img=$row["Image_Url"];
-                $price=$row["Product_Price"];
-                $name=$row["Product_Name"];
-
-                include 'include/items.html';
+                if(array_key_exists('all', $_POST)){
+                    $query = "select * from product";
+                    $result = $con->query($query);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                        $img=$row["Image_Url"];
+                        $price=$row["Product_Price"];
+                        $name=$row["Product_Name"];
+                        
+                        include 'include/items.html';
+                        }
+                    }
+                }
+                else if (array_key_exists('beans', $_POST)){
+                    $query = "select * from product where Product_Type='Coffee Beans'";
+                    $result = $con->query($query);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                        $img=$row["Image_Url"];
+                        $price=$row["Product_Price"];
+                        $name=$row["Product_Name"];
+                        
+                        include 'include/items.html';
+                        }
+                    }
+                }
+                else if (array_key_exists('hcoffee', $_POST)){
+                    $query = "select * from product where Product_Type='Hot Coffee'";
+                    $result = $con->query($query);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                        $img=$row["Image_Url"];
+                        $price=$row["Product_Price"];
+                        $name=$row["Product_Name"];
+                        
+                        include 'include/items.html';
+                        }
+                    }
+                }
+                else if (array_key_exists('icoffee', $_POST)){
+                    $query = "select * from product where Product_Type='Iced Coffee'";
+                    $result = $con->query($query);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                        $img=$row["Image_Url"];
+                        $price=$row["Product_Price"];
+                        $name=$row["Product_Name"];
+                        
+                        include 'include/items.html';
+                        }
+                    }
+                }
+                else if (array_key_exists('pastry', $_POST)){
+                    $query = "select * from product where Product_Type='Pastry'";
+                    $result = $con->query($query);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                        $img=$row["Image_Url"];
+                        $price=$row["Product_Price"];
+                        $name=$row["Product_Name"];
+                        
+                        include 'include/items.html';
+                        }
+                    }
                 }
             }
-            }
+            
+        
         ?>
         
     </div>
