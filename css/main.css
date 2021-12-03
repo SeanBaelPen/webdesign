@@ -199,3 +199,9 @@ input[type="text"] {
 .contactsInfo, span {
   display: block;
 } */
+
+@media screen and(max-width:600px) {
+   .nav{
+     display:none;
+   }
+}
