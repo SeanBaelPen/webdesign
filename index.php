@@ -38,7 +38,7 @@
 
   <?php
     include 'include/navbar_default.html';
-  
+
   ?>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
