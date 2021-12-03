@@ -45,6 +45,7 @@ table {
   border: none;
 }
 
+
 td {
   border: 3px solid #000;
   padding-top: 15px;
@@ -201,3 +202,35 @@ input[type="text"] {
   margin-bottom: 50px !important;
   margin-left: 120px !important;
 }
+<<<<<<< HEAD
+=======
+
+.about,
+.shopOnline,
+.contacts {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+
+
+.aboutInfos,
+.shopInfos,
+.contactsInfo, span {
+  display: block;
+} */
+
+
+@media screen and(max-width:600px) {
+   .nav{
+     display:none;
+   }
+}
+
+.body{
+  border: 1px solid black;
+}
+.prod_specs{
+  position: sticky;
+}
+>>>>>>> a7b8d3a7e3aa6ca7a7550f8dc0c3d718fef28f27
