@@ -55,6 +55,7 @@
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
+                        $id=$row["Product_Id"];
                         
                         include 'include/items.html';
                         }
@@ -68,6 +69,7 @@
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
+                        $id=$row["Product_Id"];
                         
                         include 'include/items.html';
                         }
@@ -78,6 +80,7 @@
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
+                        $id=$row["Product_Id"];
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
@@ -91,6 +94,7 @@
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
+                        $id=$row["Product_Id"];
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
@@ -104,9 +108,11 @@
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
+                        $id=$row["Product_Id"];
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
+                        
                         
                         include 'include/items.html';
                         }
@@ -119,6 +125,7 @@
         
     </div>
 </div>
+
  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
