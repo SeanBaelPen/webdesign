@@ -2,59 +2,14 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <div class="header">Record Employee Deduction</div>
-        <div class="contents">
-          <div class="emp_table">
-
-          </div>
-
-          <div class="emp">
-            <div class="emp_contents">
-              <div class="emp_info">
-                <div class="pic">
-                  <img src="1.png" width="80%" />
-                </div>
-                <div class="info">
-                  <h6>00-000-00</h6>
-                  <h1>Jane Doe</h1>
-                  <h4>Product Manager</h4>
-                </div>
-              </div>
-              <div class="deductions">
-                <form>
-                  <div class="date">
-                    <label for="birthday">Date:</label>
-                    <input type="date" id="birthday" name="Date" /><br />
-                  </div>
-                  <div class="chkbx">
-                    <input type="checkbox" id="wtax" name="wtax" value="wtax" />
-                    <label for="wtax"> Witholding Tax</label><br />
-                    <input
-                      type="checkbox"
-                      id="others"
-                      name="others"
-                      value="others"
-                    />
-                    <label for="others"> Others</label><br />
-                  </div>
-                  <div class="txtboxes">
-                    <input type="text" placeholder="0.00" />
-                    <input type="text" placeholder="Remarks" />
-                    <input type="text" placeholder="0.00" />
-                  </div>
-
-                  <input class="btn" type="submit" value="Add Record" />
-                  <input class="btn" type="reset" value="Clear" />
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="header">Add To Cart</div>
+        
       </div>
 
   <style>
     .modal {
-      position: fixed;
+      display: none;
+      position:fixed;
       z-index: 1;
       padding-top: 50px;
       left: 0;
@@ -85,110 +40,8 @@
       color: #7d32a8;
     }
 
-    .contents {
-      display: flex;
-      height: 85%;
-    }
-    .content_header {
-      font-size: 20px;
-      display: none;
-      margin: 30px;
-    }
-    .contents > div {
-      margin: 10px;
-      padding: 10px;
-      font-size: 20px;
-      width: 50%;
-    }
-    .emp_table {
-      overflow: auto;
-    }
-    table {
-      width: 100%;
-    }
-    th {
-      margin: 0px;
-      border: 1px solid;
-      font-size: 25px;
-      color: white;
-      background-color: #7d32a8;
-      border-radius: 5px;
-    }
-    tr {
-      font-size: 20px;
-      text-align: center;
-    }
-    th,
-    td {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-    .emp_contents {
-      border: 1px solid violet;
-      border-radius: 10px;
-      height: 100%;
-    }
-    .emp_contents > .emp_info {
-      height: 40%;
-      display: flex;
-    }
-    .emp_info {
-    }
-    .pic {
-      width: 40%;
-      margin-right: 0px;
-      float: left;
-    }
-    .info {
-      width: 60%;
-      font-family: arial;
-      font-weight: bold;
-      padding-top: 40px;
-    }
-
-    .info h6,
-    .info h1,
-    .info h4 {
-      margin: 0px;
-      padding: 0px;
-    }
-    .deductions {
-      height: 60%;
-    }
-
-    .date {
-      padding: 25px;
-      font-size: 25px;
-    }
-    .date input {
-      float: right;
-      margin-left: 150px;
-      width: 180px;
-      height: 30px;
-    }
-    .chkbx {
-      display: block;
-      width: 40%;
-      float: left;
-      padding: 10px;
-      font-size: 25px;
-    }
-    .chkbx input {
-      margin-bottom: 25px;
-      margin-top: 25px;
-      margin-right: 10px;
-    }
-    .txtboxes {
-      display: block;
-      width: 50%;
-      float: left;
-    }
-    .txtboxes input {
-      float: right;
-      margin-top: 10px;
-      width: 180px;
-      height: 30px;
-    }
+  
+  
     .close {
       color: #aaaaaa;
       float: right;
@@ -196,50 +49,19 @@
       font-weight: bold;
       margin: 10px;
     }
-    .emp > .frmbtn {
-      width: 100%;
-      border-bottom: 1px solid black;
-    }
+ 
     .close:hover,
     .close:focus {
       color: #000;
       text-decoration: none;
       cursor: pointer;
     }
-    .date,
-    .txtboxes,
-    .chkbx,
-    .frmbtn,
-    .btn {
-      border: 1px solid black;
-    }
-    .btn {
-      margin: 10px;
-    }
+  
     @media screen and (max-width: 600px) {
       .contents {
         display: block;
         overflow: auto;
         font-size: 20%;
-      }
-      table {
-        width: 80%;
-      }
-      .contents > div {
-        margin: 10px;
-        padding: 10px;
-        font-size: 20px;
-        width: 100%;
-      }
-      .emp_contents {
-        width: 80%;
-      }
-      .content_header {
-        display: block;
-      }
-      .date,.txtboxes,.chkbx,.frmbtn,.btn{
-        width:80%;
-        margin:5px;
       }
     }
   </style>
