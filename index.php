@@ -27,10 +27,10 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100 " src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style ="width:auto; height:250px" alt="First slide">
+            <img class="d-block w-100 " src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  style ="width:auto; height:250px"alt="Second slide">
+            <img class="d-block w-100" src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  style ="width:auto; height:500px"alt="Second slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style ="width:auto; height:250px"alt="Third slide">
@@ -266,9 +266,7 @@
     </div>
     <!--End of Product Carousel-->
   </section>
-  <?php
-    include 'include\modal.html';
-  ?>
+
 
   <section>
     <div class="container-fluid">
