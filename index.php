@@ -14,8 +14,6 @@
   <?php
   include 'include/navbar_default.html';
     ?>
-
-
   <!--End of Nav Bar-->
 
   <section>
@@ -114,7 +112,7 @@
               </div>
             </div>
           </div>
-          
+
 
           <div class="carousel-item">
             <div class="container-fluid">
