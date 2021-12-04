@@ -47,6 +47,7 @@
                 die("Failed To Connect: ".$con->connect_error);
             }
             else{
+              
                 if(array_key_exists('all', $_POST)){
                     $query = "select * from product";
                     $result = $con->query($query);
