@@ -1,21 +1,24 @@
-  
+  <div>
   <form>
   <div class="card m-2" style="width: 18rem;">
     <img class="card-img-top" src="<?php echo $img;?>" alt="First slide">
     <hr class="mt-5">
     <div class="card-body">
       <h5 class="card-title"><?php echo $name?></h5>
-      <p class="card-text" style="display: inline-block"><?php echo "₱",$price;?></p>
-      <a type="submit" href="#" class="btn btn-primary ml-5">Add To Cart</a>
+      <p class="card-text" style="display: inline-block"><?php echo $id;?></p>
+      <a type="submit" id="<?php echo "myBtn".$id;?>"  class="btn btn-primary ml-5">Add To Cart</a>
     </div>
   </div>
 </form>
-<div id="myModal" class="modal">
+
+<div id="<?php echo "myModal".$id;?>" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="<?php echo "close".$id;?>">&times;</span>
     <div class="header">Add To Cart</div>
+    <?php echo $id?>
     </div>
   </div>
+</div>
 
 <style>
   .modal {
@@ -50,7 +53,7 @@
       font-weight: bold;
       color: #7d32a8;
     }
-    .close {
+    .<?php echo "close".$id;?> {
       color: #aaaaaa;
       float: right;
       font-size: 28px;
@@ -58,8 +61,8 @@
       margin: 10px;
     }
  
-    .close:hover,
-    .close:focus {
+    .<?php echo "close".$id;?>:hover,
+    .<?php echo "close".$id;?>:focus {
       color: #000;
       text-decoration: none;
       cursor: pointer;
@@ -70,6 +73,23 @@
     display: block;
   }
 </style>
-  
+<script>
+  var <?php echo "myModal".$id;?> = document.getElementById("<?php echo "myModal".$id;?>");
+  var <?php echo "myBtn".$id;?> = document.getElementById("<?php echo "myBtn".$id;?>");
+  var <?php echo "close".$id;?> = document.getElementsByClassName("<?php echo "close".$id;?>")[0];
+  <?php echo "myBtn".$id;?>.onclick = function() {
+    <?php echo "myModal".$id;?>.style.display = "block";
+  }
+  <?php echo "close".$id;?>.onclick = function() {
+    <?php echo "myModal".$id;?>.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == <?php echo "myModal".$id;?>) {
+      <?php echo "myModal".$id;?>.style.display = "none";
+
+    }
+  }
+  </script>
 
   
