@@ -16,9 +16,9 @@
 </head>
 
 <body>
-<div class="container-fluid bg-dark d-flex ">
+<div class="container-fluid d-flex ">
     <div></div>
-    <div class="col-sm-3 bg-dark">
+    <div class="col-sm-3">
         <ul class="prod_specs">
             <form method="post">
             <li>
@@ -38,7 +38,7 @@
             </li>
             </form>
         </ul>
-
+   
     </div>
     <div class="col-sm-9 bg-light">
         <?php
