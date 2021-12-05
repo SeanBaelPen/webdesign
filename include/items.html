@@ -1,15 +1,15 @@
-  <div>
-  <form>
-  <div class="card m-2" style="width: 18rem;">
+  
+  
+  <div class="card m-2" style="width:18rem;" >
     <img class="card-img-top" src="<?php echo $img;?>" alt="First slide">
     <hr class="mt-5">
-    <div class="card-body">
+    <div class="card-body" style="height: 150px;">
       <h5 class="card-title"><?php echo $name?></h5>
-      <p class="card-text" style="display: inline-block"><?php echo $id;?></p>
+      <p class="card-text" style="display: inline-block"><?php echo "₱".$price;?></p>
       <a type="submit" id="<?php echo "myBtn".$id;?>"  class="btn btn-primary ml-5">Add To Cart</a>
     </div>
   </div>
-</form>
+
 
 <div id="<?php echo "myModal".$id;?>" class="modal">
   <div class="modal-content">
@@ -18,7 +18,7 @@
     <?php echo $id?>
     </div>
   </div>
-</div>
+
 
 <style>
   .modal {
@@ -68,7 +68,7 @@
       cursor: pointer;
     }
   .card{
-    position: relative;
+    
     float:left;
     display: block;
   }
