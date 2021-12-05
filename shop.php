@@ -18,11 +18,11 @@
 <body>
 <div class="container-fluid d-flex ">
     <div></div>
-    <div class="col-sm-3">
-        <ul class="prod_specs">
+    <div class="col-sm-3" style="background-color:black;">
+        <ul class="prod_specs" >
             <form method="post">
             <li>
-            <button type= "submit" name ="all" >All</button>
+            <button  type= "submit" name ="all" >All</button>
             </li>
             <li>
             <button type= "submit" name ="beans">Coffee Beans</button>
