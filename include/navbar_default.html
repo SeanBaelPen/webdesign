@@ -12,14 +12,14 @@
             <a class="nav-link" href="shop.php">SHOP<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active mt-3 mr-3">
-            <a class="nav-link" href="about.html">ABOUT US<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="about.php">ABOUT US<span class="sr-only">(current)</span></a>
           </li>
           <a class="navbar-brand" href="index.php"><img src="Pictures/logo.png" alt=""></a>
           <li class="nav-item active mt-3 ml-3">
             <a class="nav-link" href="location.html">LOCATIONS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active mt-3 ml-5">
-            <a class="nav-link" href="#">ACCOUNT<span class="sr-only">(current)</span></a>
+            <a id="login" class="nav-link" href="#">ACCOUNT<span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <svg xmlns="http://www.w3.org/2000/svg" onclick="alert('You have clicked the circle.')" width="30" height="30" fill="currentColor" class="bi bi-cart4 mr-2" viewBox="0 0 16 16">
@@ -29,3 +29,83 @@
       </div>
     </nav>
   </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="header">Add To Cart</div>
+        Account Details Here
+      </div>
+    </div>
+  
+  
+  <style>
+    .modal {
+        
+        position:fixed;
+        z-index: 1;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid #888;
+        border-radius: 20px;
+        width: 80%;
+        height: auto;
+      }
+      .header {
+        padding: 20px;
+        font-size: 20px;
+        border-bottom: 1px solid;
+        box-shadow: 20px grey;
+        border-radius: 5px;
+        font-family: arial;
+        font-weight: bold;
+        color: #7d32a8;
+      }
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px;
+      }
+   
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    .card{
+      
+      float:left;
+      display: block;
+    }
+  </style>
+  <script>
+    var myModal = document.getElementById("myModal");
+    var myBtn = document.getElementById("login");
+    var close = document.getElementsByClassName("close")[0];
+    myBtn.onclick = function() {
+      myModal.style.display = "block";
+    }
+    close.onclick = function() {
+     myModal.style.display = "none";
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == myModal) {
+        myModal.style.display = "none";
+  
+      }
+    }
+    </script>
