@@ -5,11 +5,12 @@
 <html lang="en" dir="ltr">
 
 <head>
+<link rel="icon" href="Pictures/logo.png">  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <title>Louis</title>
+  <title>Louis-Shop</title>
   <?php
     include 'include/navbar_default.html';
   ?>
@@ -26,16 +27,16 @@
             <button  type= "submit" name ="all" >All</button>
             </li>
             <li>
-            <button type= "submit" name ="beans">Coffee Beans</button>
+            <button type= "submit" name ="Equipments">Equipments</button>
             </li>
             <li>
-            <button type= "submit" name ="hcoffee">Hot Coffee</button>
+            <button type= "submit" name ="Tees">Tees</button>
             </li>
             <li>
-            <button type= "submit" name ="icoffee">Iced Coffee</button>
+            <button type= "submit" name ="Cups">Cups</button>
             </li>
             <li>
-            <button type= "submit" name ="pastry">Pastry</button>
+            <button type= "submit" name ="Others">Others</button>
             </li>
             </form>
         </ul>
@@ -65,8 +66,8 @@
                         }
                     }
                 }
-                else if (array_key_exists('beans', $_POST)){
-                    $query = "select * from product where Product_Type='Coffee Beans'";
+                else if (array_key_exists('Equipments', $_POST)){
+                    $query = "select * from product where Product_Type='Equipment'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -81,8 +82,8 @@
                         }
                     }
                 }
-                else if (array_key_exists('hcoffee', $_POST)){
-                    $query = "select * from product where Product_Type='Hot Coffee'";
+                else if (array_key_exists('Tees', $_POST)){
+                    $query = "select * from product where Product_Type='Tee'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -97,8 +98,8 @@
                         }
                     }
                 }
-                else if (array_key_exists('icoffee', $_POST)){
-                    $query = "select * from product where Product_Type='Frappe'";
+                else if (array_key_exists('Cups', $_POST)){
+                    $query = "select * from product where Product_Type='Cups'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -110,11 +111,12 @@
                         $type=$row["Product_Type"];
                         
                         include 'include/items.html';
+                        
                         }
                     }
                 }
-                else if (array_key_exists('pastry', $_POST)){
-                    $query = "select * from product where Product_Type='Baked Goods'";
+                else if (array_key_exists('Others', $_POST)){
+                    $query = "select * from product where Product_Type='Membership Card' OR Product_Type='Gift Card'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {

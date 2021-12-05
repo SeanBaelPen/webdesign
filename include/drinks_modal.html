@@ -1,0 +1,36 @@
+<div class="contents">
+    <div class="row justify-content-center">
+      <img src="<?php echo $img;?>" style="width: 50%;">
+      <div >
+        
+        <h2><?php echo $name;?></h2>
+        <h4><?php echo $type;?></h4>
+        <h4><?php echo "₱".$price;?></h4>
+      </div>
+    </div>
+    <div style=" border-left:double 12px black">
+      <div>
+      
+    </div>
+    <h5>Size:</h3>
+        <input id = "tall" type="radio" name="size">
+        <label for="tall">Tall</label><br>
+        <input id = "grande" type="radio" name="size">
+        <label for="grande">Grande</label><br>
+        <input id = "venti"type="radio" name="size">
+        <label for="venti">Venti</label><br>
+
+        <h5>Extras:</h3>
+            <input id = "cinnamon" type="checkbox">
+            <label for="cinnamon">Cinnamon</label><br>
+            <input id = "cream" type="checkbox">
+            <label for="cream">Cream</label><br>
+
+      <h5>Quantity:</h3>
+      <input class="text"><br><br><br>
+      
+      <a type="submit"  class="btn btn-primary ml-5">Add To Cart</a>
+      
+    </div>
+
+  </div>

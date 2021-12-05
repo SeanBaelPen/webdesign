@@ -5,11 +5,12 @@
 <html lang="en" dir="ltr">
 
 <head>
+<link rel="icon" href="Pictures/logo.png">  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <title>Louis</title>
+  <title>Louis-Menu</title>
   <?php
     include 'include/navbar_default.html';
   ?>
@@ -35,7 +36,7 @@
             <button type= "submit" name ="icoffee">Iced Coffee</button>
             </li>
             <li>
-            <button type= "submit" name ="pastry">Pastry</button>
+            <button type= "submit" name ="pastry">Baked Goods</button>
             </li>
             </form>
         </ul>
@@ -124,6 +125,7 @@
                         $name=$row["Product_Name"];
                         $desc=$row["Product_Desc"];
                         $type=$row["Product_Type"];
+                        
                         
                         include 'include/items.html';
                         }

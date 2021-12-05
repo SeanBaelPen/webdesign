@@ -15,7 +15,25 @@
   <div class="modal-content">
     <span class="<?php echo "close".$id;?>">&times;</span>
     <div class="header">Add To Cart</div>
-    <?php include'simple_modal.html'?>
+    <?php 
+
+    if($type=="Tee"){
+      include'merchandise_modal.html';
+    }
+    else if ($type=="Hot Coffee"){
+      include'drinks_modal.html';
+    }
+    else if ($type=="Frappe"){
+      include'drinks_modal.html';
+    }
+    else if ($type=="Hot Coffee"){
+      include'drinks_modal.html';
+    }
+    else{
+      include'simple_modal.html';
+    }
+    
+    ?>
     </div>
   </div>
 
