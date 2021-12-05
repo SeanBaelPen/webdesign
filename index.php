@@ -40,13 +40,13 @@
     </div>
     <!--End of First Carousel-->
   </section>
-
+  <!--
   <section>
     <div class="caption">
       <p>Our Products</p>
     </div>
 
-    <!--Table Links for the Product Carousel-->
+  
     <div class="container p-0">
       <table class="mx-auto">
         <tr>
@@ -65,9 +65,8 @@
         </tr>
       </table>
     </div>
-    <!--Table Links for the Product Carousel-->
 
-    <!--Start of Product Carousel-->
+    
     <div class="container-fluid p-0 mt-5" id="coffeeTab">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -264,22 +263,22 @@
         </a>
       </div>
     </div>
-    <!--End of Product Carousel-->
-  </section>
+  </section>-->
 
 
   <section>
     <div class="container-fluid">
       <div class="caption">
-        <p>Lorem Ipsum</p>
+        <p>More about Louis</p>
       </div>
 
       <div class="row">
-        <div class="col">
+        <div class="col text-center">
           <p class="titleForInfos">Our story</p>
-          <p class="tinyDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Quisque ligula tortor, aliquam a euismod vitae, lacinia eu <br>
-            purus. Suspendisse a
+          <p class="tinyDetails">
+            Louis is create by a band of 7 people that got together to serve <br>
+            you like a royal and noble in 17th Century France. <br>
+            Learn more about our story and history.
           </p>
           <button type="button" class="btn btn-outline-dark btn-lg">Learn More</button>
         </div>
@@ -291,27 +290,28 @@
 
       <div class="row mt-5">
         <div class="col">
-          <img id="firstImage" src="outdoorshop.jpg" alt="">
+          <img id="firstImage" src="Pictures/outdoorshop.jpg" alt="">
         </div>
 
-        <div class="col">
-          <p class="titleForInfos">Our story</p>
-          <p class="tinyDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Quisque ligula tortor, aliquam a euismod vitae, lacinia eu <br>
-            purus. Suspendisse a
+        <div class="col text-center">
+          <p class="titleForInfos">Locations</p>
+          <p class="tinyDetails">
+            Want to sip coffee like royalty and nobility? Come visit us. <br>
+            Take a look at our locations and find a branch near you.
           </p>
-          <button type="button" class="btn btn-outline-dark btn-lg text-center">Learn More</button>
+          <button type="button" class="btn btn-outline-dark btn-lg justify-content-center">Branch Locations</button>
         </div>
       </div>
 
       <div class="row mt-5">
-        <div class="col">
-          <p class="titleForInfos">Our story</p>
-          <p class="tinyDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Quisque ligula tortor, aliquam a euismod vitae, lacinia eu <br>
-            purus. Suspendisse a
+        <div class="col text-center">
+          <p class="titleForInfos">Membership Application</p>
+          <p class="tinyDetails">
+            Earn a status of Royalty or Nobility by applying for a membership. <br>
+            Get exclusive deals and products when you <br>
+            apply for a membership.
           </p>
-          <button type="button" class="btn btn-outline-dark btn-lg">Learn More</button>
+          <button type="button" class="btn btn-outline-dark btn-lg">Apply Now</button>
         </div>
 
         <div class="col">
@@ -320,11 +320,12 @@
       </div>
     </div>
   </section>
-  <div class="container-fluid">
+    <footer>
   <?php
     include 'include\footer.html';
   ?>
 </div>
+</footer>
   <script src="script.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
