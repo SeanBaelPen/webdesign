@@ -16,28 +16,67 @@
           </li>
           <a class="navbar-brand" href="index.php"><img src="Pictures/logo.png" alt=""></a>
           <li class="nav-item active mt-3 ml-3">
-            <a class="nav-link" href="location.html">LOCATIONS<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="location.php">LOCATIONS<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active mt-3 ml-5">
             <a id="login" class="nav-link" href="#">ACCOUNT<span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <svg xmlns="http://www.w3.org/2000/svg" onclick="alert('You have clicked the circle.')" width="30" height="30" fill="currentColor" class="bi bi-cart4 mr-2" viewBox="0 0 16 16">
-          <path
-            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-        </svg>
+        
       </div>
     </nav>
   </div>
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <div class="header">Add To Cart</div>
-        Account Details Here
+      <div class="header">ACCOUNT</div>
+      <div class="contents">
+        <div class="row justify-content-center">
+          <img src="Pictures\1.png" style="width: 50%;">
+          <div >
+            <h6>00-000-00</h6>
+            <h1>Jane Doe</h1>
+            <h4>Noble Membership</h4>
+          </div>
+        </div>
+        <div style=" border-left:double 12px black">
+          <div>
+          <h3>Cart</h3>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" onclick="alert('You have clicked the circle.')" width="30" height="30" fill="currentColor" class="bi bi-cart4 mr-2" viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+          </svg>
+          <h1><label style="float:right">Total:₱000.00</label><br></h1>
+        </div>
+          <div></div>
+          <input type="checkbox">
+          <label>Item Name</label>
+          <label style="float:right">₱000.00</label><br>
+          <input type="checkbox">
+          <label>Item Name</label>
+          <label style="float:right">₱000.00</label><br>
+          <input type="checkbox">
+          <label>Item Name</label>
+          <label style="float:right">₱000.00</label><br>
+          <input type="checkbox">
+          <label>Item Name</label>
+          <label style="float:right">₱000.00</label><br>
+          <input type="checkbox">
+          <label>Item Name</label>
+          <label style="float:right">₱000.00</label><br>
+          <input type="checkbox">
+          <label>Item Name</label>
+          <label style="float:right">₱000.00</label><br>
+          
+          <a type="submit"  class="btn btn-primary ml-5">Check Out</a>
+          <a type="submit"  class="btn btn-primary ml-5">Delete Item</a>
+        </div>
+
       </div>
-    </div>
-  
-  
+        
+      </div>
+  </div>
   <style>
     .modal {
         
@@ -90,6 +129,41 @@
       float:left;
       display: block;
     }
+    .contents {
+      display: flex;
+      height: 85%;
+    }
+    .content_header {
+      font-size: 20px;
+      display: none;
+      margin: 30px;
+    }
+    .contents > div {
+      margin: 10px;
+      padding: 10px;
+      font-size: 20px;
+      width: 50%;
+  
+
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px;
+    }
+    .emp > .frmbtn {
+      width: 100%;
+      border-bottom: 1px solid black;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+  
   </style>
   <script>
     var myModal = document.getElementById("myModal");
