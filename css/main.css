@@ -1,3 +1,4 @@
+/* Start of Nav Bar Styles */
 .navbar-brand img {
   height: 60px;
   margin-left: 20px;
@@ -8,7 +9,9 @@ ul li a {
   font-family: "Corbel";
   font-size: 18px;
 }
+/* End of Nav Bar Styles */
 
+/* Landing Page Carousel */
 .carousel-caption h2{
   margin-top: -90px !important;
 }
@@ -41,7 +44,9 @@ ul li a {
   text-align: center;
   font-size: 70px;
 }
+/* Landing Page Carousel */
 
+/* Tiny Details Section */
 .titleForInfos {
   margin-top: 70px;
   font-size: 30px;
@@ -62,7 +67,9 @@ ul li a {
   margin-right: 60px;
   float: right;
 }
+/* Tiny Details Section */
 
+/* About Page History */
 .history {
   height: 580px;
   width: 100%;
@@ -92,7 +99,9 @@ ul li a {
   width: 800px;
   word-wrap: break-word;
 }
+/* About Page History */
 
+/* The team styles */
 .text-center {
   margin-top: 20px;
 }
@@ -110,7 +119,25 @@ ul li a {
   margin-top: 180px;
   margin-left: 140px !important;
 }
+/* The team styles */
 
+/* Location Styles */
+.rowCenter {
+  margin-left: 60px !important;
+}
+
+.locationPage {
+  margin-top: 250px;
+  margin-bottom: 50px !important;
+  margin-left: 209px !important;
+}
+
+.card-text {
+  font-size: 14px;
+}
+/* Location Styles */
+
+/* Footer Styles */
 .footer {
   background-color: #D3D3D3;
   margin-top: 50px;
@@ -172,12 +199,7 @@ input[type="text"] {
   border-bottom: 1px solid #000;
   background: none;
 }
-
-.locationPage {
-  margin-top: 230px;
-  margin-bottom: 50px !important;
-  margin-left: 120px !important;
-}
+/* Footer Styles */
 
 .about,
 .shopOnline,
