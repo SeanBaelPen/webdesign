@@ -16,9 +16,10 @@
 </head>
 
 <body>
+<div class="container-fluid"> <img src="Pictures\Header_Image\Menu.jpg" style="width: 100%"></div>
 <div class="container-fluid d-flex ">
-    <div></div>
-    <div class="col-sm-3" style="background-color:black;">
+    
+    <div class="col-sm-3" style="background-color:black">
         <ul class="prod_specs" >
             <form method="post">
             <li>
@@ -91,7 +92,7 @@
                     }
                 }
                 else if (array_key_exists('icoffee', $_POST)){
-                    $query = "select * from product where Product_Type='Iced Coffee'";
+                    $query = "select * from product where Product_Type='Frappe'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -105,7 +106,7 @@
                     }
                 }
                 else if (array_key_exists('pastry', $_POST)){
-                    $query = "select * from product where Product_Type='Pastry'";
+                    $query = "select * from product where Product_Type='Baked Goods'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -126,7 +127,22 @@
         
     </div>
 </div>
-
+<style>
+    ul{
+        list-style: none;
+    }
+    li button{
+        position:sticky;
+        width:100%;
+        height:25%;
+        padding: 20px;
+        margin:10px;
+        border:none;
+        background-color:transparent;
+        color: white;
+        font-size:17pt;
+    }
+</style>
  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
