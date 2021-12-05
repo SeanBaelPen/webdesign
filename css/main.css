@@ -129,7 +129,7 @@ ul li a {
 .locationPage {
   margin-top: 250px;
   margin-bottom: 50px !important;
-  margin-left: 209px !important;
+  margin-left: 209fpx !important;
 }
 
 .card-text {
@@ -227,5 +227,3 @@ input[type="text"] {
 .prod_specs {
   position: sticky;
 }
-
-
