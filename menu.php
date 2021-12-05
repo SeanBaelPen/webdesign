@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div class="container-fluid"> <img src="Pictures\Header_Image\Shops_CC9200BG.jpg" style="width: 100%"></div>
+<div class="container-fluid"> <img src="Pictures\Header_Image\Menu.jpg" style="width: 100%"></div>
 <div class="container-fluid d-flex ">
     
     <div class="col-sm-3" style="background-color:black">
@@ -50,7 +50,7 @@
             else{
               
                 if(array_key_exists('all', $_POST)){
-                    $query = "select * from product where Product_Desc ='Merchandise'";
+                    $query = "select * from product where Product_Desc !='Merchandise'";
                     $result = $con->query($query);
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
