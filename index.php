@@ -135,7 +135,7 @@
                     <hr class="mt-5">
                     <div class="card-body">
                       <h5 class="card-title">Hot Butterball Pumpkin Spice Latte</h5>
-                      <p class="card-text" style="display: inline-block">₱000.00</p>
+                      <p class="card-text" style="display: inline-block">₱010.00</p>
                       <a href="#" class="btn btn-primary ml-5">Order Now</a>
                     </div>
                   </div>
@@ -320,58 +320,15 @@
       </div>
     </div>
   </section>
-
-  <div class="footer">
-    <div class="container-fluid">
-      <div class="socialMedia">
-        <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="">
-        <img src="https://cdn.icon-icons.com/icons2/1109/PNG/512/1486053611-twitter_79195.png" alt="">
-        <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png" alt="">
-      </div>
-    </div>
-
-    <div class="container-fluid m-0 p-0">
-      <div class="footerFlex">
-        <div class="box-1">
-          <img src="pictures/logo.png" alt="logo.png" height="100px" class="footerLogo">
-        </div>
-        <div class="box-2">
-          <span>About</span>
-          <div class="aboutInfos">
-            <span>FAQ</span>
-            <span>Locations</span>
-            <span>Our Story</span>
-            <span>Join Us</span>
-          </div>
-        </div>
-        <div class="box-3">
-          <span>Shop Online</span>
-          <div class="shopInfos">
-            <span>Menu</span>
-            <span>Equpiment</span>
-          </div>
-        </div>
-        <div class="box-4">
-          <span>Contacts</span>
-          <div class="contactsInfo">
-            <span>info@louis.com.ph</span>
-            <span>801-####</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="newsletter">
-        <p>Subscribe to our newsletter</p>
-        <input type="text" placeholder="Enter Email" name="email" required>
-      </div>
-    </div>
-  </div>
-  </div>
-
+  <div class="container-fluid">
+  <?php
+    include 'include\footer.html';
+  ?>
+</div>
   <script src="script.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
+  
 </html>
