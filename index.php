@@ -38,8 +38,39 @@
         </div>
       </div>
     </div>
-    <!--End of First Carousel-->
+
+    
   </section>
+  <div class="container-fluid">
+    <div class="caption">
+    <p>Our Best Sellers</p>
+    </div>
+    <div class="row justify-content-center">
+      <?php
+         $con = new mysqli("localhost:3307","root","d14nof4m","louis");
+         if($con->connect_error){
+             die("Failed To Connect: ".$con->connect_error);
+         }
+         else{
+                            $query = "select * from product where Best_Seller='Yes'";
+                            $result = $con->query($query);
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                                $id=$row["Product_Id"];
+                                $img=$row["Image_Url"];
+                                $price=$row["Product_Price"];
+                                $name=$row["Product_Name"];
+                                $desc=$row["Product_Desc"];
+                                $type=$row["Product_Type"];
+                                
+                                
+                                include 'include/items.html';
+                                }
+                            }
+                          }
+      ?>
+    </div>
+  </div>
   <!--
   <section>
     <div class="caption">

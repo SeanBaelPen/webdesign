@@ -1,10 +1,11 @@
 <div class="contents">
         <div class="row justify-content-center">
-          <img src="Pictures\1.png" style="width: 50%;">
+          <img src="<?php echo $img;?>" style="width: 50%;">
           <div >
-            <h6>00-000-00</h6>
-            <h1>Jane Doe</h1>
-            <h4>Noble Membership</h4>
+            
+            <h2><?php echo $name;?></h2>
+            <h4><?php echo $type;?></h4>
+            <h4><?php echo "₱".$price;?></h4>
           </div>
         </div>
         <div style=" border-left:double 12px black">
@@ -17,7 +18,7 @@
           </svg>
           <h1><label style="float:right">Total:₱000.00</label><br></h1>
         </div>
-          <div></div>
+          
           <input type="checkbox">
           <label>Item Name</label>
           <label style="float:right">₱000.00</label><br>
@@ -37,8 +38,8 @@
           <label>Item Name</label>
           <label style="float:right">₱000.00</label><br>
           
-          <a type="submit"  class="btn btn-primary ml-5">Check Out</a>
-          <a type="submit"  class="btn btn-primary ml-5">Delete Item</a>
+          <a type="submit"  class="btn btn-primary ml-5">Add To Cart</a>
+          
         </div>
 
       </div>

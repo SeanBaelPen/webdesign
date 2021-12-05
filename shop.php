@@ -58,6 +58,8 @@
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
                         $id=$row["Product_Id"];
+                        $desc=$row["Product_Desc"];
+                        $type=$row["Product_Type"];
                         
                         include 'include/items.html';
                         }
@@ -72,6 +74,8 @@
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
                         $id=$row["Product_Id"];
+                        $desc=$row["Product_Desc"];
+                        $type=$row["Product_Type"];
                         
                         include 'include/items.html';
                         }
@@ -86,6 +90,8 @@
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
+                        $desc=$row["Product_Desc"];
+                        $type=$row["Product_Type"];
                         
                         include 'include/items.html';
                         }
@@ -100,6 +106,8 @@
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
+                        $desc=$row["Product_Desc"];
+                        $type=$row["Product_Type"];
                         
                         include 'include/items.html';
                         }
@@ -114,6 +122,8 @@
                         $img=$row["Image_Url"];
                         $price=$row["Product_Price"];
                         $name=$row["Product_Name"];
+                        $desc=$row["Product_Desc"];
+                        $type=$row["Product_Type"];
                         
                         
                         include 'include/items.html';
