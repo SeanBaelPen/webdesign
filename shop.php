@@ -20,7 +20,7 @@
 <div class="container-fluid"> <img src="Pictures\Header_Image\Shops_CC9200BG.jpg" style="width: 100%"></div>
 <div class="container-fluid d-flex ">
     
-    <div class="col-sm-3" style="background-color:black">
+    <div class="col-sm-3">
         <ul class="prod_specs" >
             <form method="post">
             <li>
@@ -140,7 +140,7 @@
     </div>
 </div>
 <style>
-    ul{
+     ul{
         list-style: none;
     }
     li button{
@@ -151,8 +151,12 @@
         margin:10px;
         border:none;
         background-color:transparent;
-        color: white;
+        box-shadow:20px 10px 10px grey;
+        
         font-size:17pt;
+    }
+    li button:hover{
+        color:red;
     }
 </style>
  
