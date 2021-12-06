@@ -33,7 +33,7 @@
             <button type= "submit" name ="hcoffee">Hot Coffee</button>
             </li>
             <li>
-            <button type= "submit" name ="icoffee">Iced Coffee</button>
+            <button type= "submit" name ="icoffee">Frappe</button>
             </li>
             <li>
             <button type= "submit" name ="pastry">Baked Goods</button>
