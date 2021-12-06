@@ -87,7 +87,7 @@
             you like a royal and noble in 17th Century France. <br>
             Learn more about our story and history.
           </p>
-          <button type="button" class="btn btn-outline-dark btn-lg">Learn More</button>
+          <button href="about.php"type="button" class="btn btn-outline-dark btn-lg">Learn More</button>
         </div>
 
         <div class="col">

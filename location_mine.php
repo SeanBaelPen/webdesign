@@ -8,9 +8,34 @@
   </head>
   <body>
     <header>
-      <?php
-      include 'include/navbar_default.html';
-        ?>
+      <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link mt-3 mr-5" href="menu.php">MENU<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mt-3 mr-5">
+                  <a class="nav-link" href="shop.php">SHOP<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mt-3 mr-3">
+                  <a class="nav-link" href="about.php">ABOUT US<span class="sr-only">(current)</span></a>
+                </li>
+                <a class="navbar-brand" href="index2.phpl"><img src="Pictures/logo.png" alt=""></a>
+                <li class="nav-item active mt-3 ml-3">
+                  <a class="nav-link" href="location.html">LOCATIONS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mt-3 ml-5">
+                  <a id="login" class="nav-link" href="#">ACCOUNT<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
     </header>
 
     <section>

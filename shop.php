@@ -42,7 +42,7 @@
         </ul>
    
     </div>
-    <div class="col-sm-9 bg-light">
+    <div class="col-sm-9 bg-light products">
         <?php
             $con = new mysqli("localhost:3307","root","d14nof4m","louis");
             if($con->connect_error){
@@ -157,6 +157,10 @@
     }
     li button:hover{
         color:red;
+    }
+    .products{
+        background-color:transparent;
+        box-shadow:20px 10px 10px grey;
     }
 </style>
  
