@@ -11,9 +11,35 @@
 
 <body>
   <!--Start of Nav Bar-->
-  <?php
-  include 'include/navbar_default.html';
-  ?>
+  <header>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link mt-3 mr-5" href="menu.html">MENU<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mt-3 mr-5">
+                <a class="nav-link" href="shop.html">SHOP<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mt-3 mr-3">
+                <a class="nav-link" href="about.html">ABOUT US<span class="sr-only">(current)</span></a>
+              </li>
+              <a class="navbar-brand" href="index2.html"><img src="Pictures/logo.png" alt=""></a>
+              <li class="nav-item active mt-3 ml-3">
+                <a class="nav-link" href="location.html">LOCATIONS<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mt-3 ml-5">
+                <a id="login" class="nav-link" href="#">ACCOUNT<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </header>
   <!--End of Nav Bar-->
 
   <section>
@@ -54,13 +80,50 @@
   </section>
 
   <section>
-    <div class="caption">
-      <p>Our Products</p>
+    <div class="container">
+      <div class="caption">
+        <p>Best Sellers</p>
+      </div>
+      <div class="row cardsStyle">
+        <div class="col-4 ml-4">
+          <div class="card" style="width: 18rem; border: none;">
+            <img class="card-img-top" src="products/Hot Coffee/HotButterballPumpkinSpiceLatte.jpg" alt="Card image cap">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Hot Butterball Pumpkin Spice Latte</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem; border: none;">
+            <img class="card-img-top" src="products/Hot Coffee/HotCoffeeIndochine.jpg" alt="Card image cap">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Hot Coffee Indochinee</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem; border: none;">
+            <img class="card-img-top" src="products/Frappe/AvocadoRaspberryMedley.jpg" alt="Card image cap">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Avocado Raspberry Medley</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <button class="btn btn-lg btn-lg-1 mt-4">See All</button>
     </div>
-
-    <!--Table Links for the Product Carousel-->
-
-    <!--Table Links for the Product Carousel-->
 
     <!--Start of Product Carousel-->
 
@@ -122,7 +185,7 @@
     </div>
   </section>
 
-  <div class="footer">
+  <div class="footer container-fluid">
     <div class="container-fluid">
       <div class="socialMedia">
         <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="">

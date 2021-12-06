@@ -44,6 +44,10 @@ ul li a {
   text-align: center;
   font-size: 70px;
 }
+
+.btn-lg-1 {
+  margin-left: 500px;
+}
 /* Landing Page Carousel */
 
 /* Tiny Details Section */
@@ -68,6 +72,17 @@ ul li a {
   float: right;
 }
 /* Tiny Details Section */
+
+/* Start of menu */
+.list {
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.column-1 {
+
+}
+/* End of menu */
 
 /* About Page History */
 .history {
@@ -129,7 +144,11 @@ ul li a {
 .locationPage {
   margin-top: 250px;
   margin-bottom: 50px !important;
-  margin-left: 209fpx !important;
+  margin-left: 209px !important;
+}
+
+.footerStyle {
+  margin-top: 220px;
 }
 
 .card-text {
