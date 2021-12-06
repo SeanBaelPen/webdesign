@@ -141,6 +141,7 @@
 <style>
     ul{
         list-style: none;
+        position:sticky;
     }
     li button{
         position:sticky;
